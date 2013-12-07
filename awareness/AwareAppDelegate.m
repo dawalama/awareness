@@ -7,6 +7,8 @@
 //
 
 #import "AwareAppDelegate.h"
+#import "UIColor+Aware.h"
+#import "AwareViewController.h"
 
 @implementation AwareAppDelegate
 
@@ -14,7 +16,9 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
+    self.window.backgroundColor = kAwareColorGreySuperLight;
+    AwareViewController *controller = [[AwareViewController alloc] initWithNibName:@"AwareViewController" bundle:nil];
+    self.window.rootViewController = controller;
     [self.window makeKeyAndVisible];
     return YES;
 }

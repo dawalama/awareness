@@ -19,6 +19,10 @@
 		5083F75A1850DC6F000149DE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5083F7421850DC6F000149DE /* UIKit.framework */; };
 		5083F7621850DC6F000149DE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5083F7601850DC6F000149DE /* InfoPlist.strings */; };
 		5083F7641850DC6F000149DE /* awarenessTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5083F7631850DC6F000149DE /* awarenessTests.m */; };
+		50FFB5381853CFF600655B6F /* AwareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FFB5371853CFF600655B6F /* AwareViewController.m */; };
+		50FFB5391853CFF600655B6F /* AwareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FFB5371853CFF600655B6F /* AwareViewController.m */; };
+		50FFB53F1853DE5400655B6F /* UIColor+Aware.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FFB53E1853DE5400655B6F /* UIColor+Aware.m */; };
+		50FFB5401853DE5400655B6F /* UIColor+Aware.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FFB53E1853DE5400655B6F /* UIColor+Aware.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +52,10 @@
 		5083F75F1850DC6F000149DE /* awarenessTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "awarenessTests-Info.plist"; sourceTree = "<group>"; };
 		5083F7611850DC6F000149DE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5083F7631850DC6F000149DE /* awarenessTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = awarenessTests.m; sourceTree = "<group>"; };
+		50FFB5361853CFF600655B6F /* AwareViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AwareViewController.h; sourceTree = "<group>"; };
+		50FFB5371853CFF600655B6F /* AwareViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AwareViewController.m; sourceTree = "<group>"; };
+		50FFB53D1853DE5400655B6F /* UIColor+Aware.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Aware.h"; sourceTree = "<group>"; };
+		50FFB53E1853DE5400655B6F /* UIColor+Aware.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Aware.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,8 +115,8 @@
 		5083F7441850DC6F000149DE /* awareness */ = {
 			isa = PBXGroup;
 			children = (
-				5083F74D1850DC6F000149DE /* AwareAppDelegate.h */,
-				5083F74E1850DC6F000149DE /* AwareAppDelegate.m */,
+				50FFB53C1853DE2E00655B6F /* Category+Utils */,
+				50FFB53A1853D2C400655B6F /* Main */,
 				5083F7501850DC6F000149DE /* Images.xcassets */,
 				5083F7451850DC6F000149DE /* Supporting Files */,
 			);
@@ -142,6 +150,42 @@
 				5083F7601850DC6F000149DE /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		50FFB5351853CFDF00655B6F /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				50FFB5361853CFF600655B6F /* AwareViewController.h */,
+				50FFB5371853CFF600655B6F /* AwareViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		50FFB53A1853D2C400655B6F /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				50FFB53B1853D68C00655B6F /* Views */,
+				50FFB5351853CFDF00655B6F /* ViewControllers */,
+				5083F74D1850DC6F000149DE /* AwareAppDelegate.h */,
+				5083F74E1850DC6F000149DE /* AwareAppDelegate.m */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		50FFB53B1853D68C00655B6F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		50FFB53C1853DE2E00655B6F /* Category+Utils */ = {
+			isa = PBXGroup;
+			children = (
+				50FFB53D1853DE5400655B6F /* UIColor+Aware.h */,
+				50FFB53E1853DE5400655B6F /* UIColor+Aware.m */,
+			);
+			name = "Category+Utils";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,6 +285,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				5083F74B1850DC6F000149DE /* main.m in Sources */,
+				50FFB5381853CFF600655B6F /* AwareViewController.m in Sources */,
+				50FFB53F1853DE5400655B6F /* UIColor+Aware.m in Sources */,
 				5083F74F1850DC6F000149DE /* AwareAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -250,6 +296,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				5083F7641850DC6F000149DE /* awarenessTests.m in Sources */,
+				50FFB5401853DE5400655B6F /* UIColor+Aware.m in Sources */,
+				50FFB5391853CFF600655B6F /* AwareViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,6 +410,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ANALYZER_OBJC_RETAIN_COUNT = NO;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "awareness/awareness-Prefix.pch";
 				INFOPLIST_FILE = "awareness/awareness-Info.plist";
@@ -375,6 +425,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ANALYZER_OBJC_RETAIN_COUNT = NO;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "awareness/awareness-Prefix.pch";
 				INFOPLIST_FILE = "awareness/awareness-Info.plist";
@@ -444,6 +496,7 @@
 				5083F7691850DC6F000149DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5083F76A1850DC6F000149DE /* Build configuration list for PBXNativeTarget "awarenessTests" */ = {
 			isa = XCConfigurationList;
@@ -452,6 +505,7 @@
 				5083F76C1850DC6F000149DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
