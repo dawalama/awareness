@@ -8,11 +8,6 @@
 
 #import "AwareViewController.h"
 
-
-typedef NS_ENUM(int, ActionViewTag) {
-    ActionViewTagSettings,
-};
-
 static AwareViewController *mainController = nil;
 
 @interface AwareViewController () <UIGestureRecognizerDelegate, UIActionSheetDelegate>
@@ -23,7 +18,6 @@ static AwareViewController *mainController = nil;
 
 + (void)initialize
 {
-    [self setupUI];
 }
 
 + (instancetype)mainController
@@ -40,21 +34,6 @@ static AwareViewController *mainController = nil;
     return self;
 }
 
-+ (void) setupUI
-{
-    NSDictionary *defaultTextAttr = @{
-                                      NSFontAttributeName: [UIFont fontWithName:@"HelveticaNeue" size:14.f],
-                                      NSForegroundColorAttributeName: [UIColor blackColor],
-                                      NSShadowAttributeName: [UIColor clearColor]
-                                      };
-    
-    // Navigation Bar
-    NSMutableDictionary *buttonTextAttr = [defaultTextAttr mutableCopy];
-    buttonTextAttr[NSForegroundColorAttributeName] = [UIColor blackColor];
-    buttonTextAttr[NSFontAttributeName] = [UIFont fontWithName:@"HelveticaNeue" size:14.f];
-    
-}
-
 - (void)loadView
 {
     self.view = [[UIView alloc] initWithFrame:[UIScreen mainScreen].bounds];
@@ -64,6 +43,15 @@ static AwareViewController *mainController = nil;
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+   
+    /*
+    UIView *backgroundView = [[UIView alloc] init];
+    backgroundView.backgroundColor = [UIColor lightGrayColor];
+    [self.view addSubview:backgroundView];
+    [backgroundView alignToView:self.view];
+    */
+    
+    
     UILabel *label = [[UILabel alloc] init];
     label.text = @"Become Aware, Evolve & Grow";
     [self.view addSubview:label];
@@ -73,14 +61,6 @@ static AwareViewController *mainController = nil;
 
 - (void) viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
-    
-    UIActionSheet *actions = [[UIActionSheet alloc]
-                              initWithTitle:@"Settings" delegate:self
-                              cancelButtonTitle:@"Cancel"
-                              destructiveButtonTitle:nil
-                              otherButtonTitles:@"What A", @"What B", nil];
-    actions.tag = ActionViewTagSettings;
-    [actions showInView:self.view];
 }
 
 - (void)didReceiveMemoryWarning
