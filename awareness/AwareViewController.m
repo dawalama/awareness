@@ -42,16 +42,6 @@ static AwareViewController *mainController = nil;
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
-   
-    /*
-    UIView *backgroundView = [[UIView alloc] init];
-    backgroundView.backgroundColor = [UIColor lightGrayColor];
-    [self.view addSubview:backgroundView];
-    [backgroundView alignToView:self.view];
-    */
-    
-    
     UILabel *label = [[UILabel alloc] init];
     label.text = @"Become Aware, Evolve & Grow";
     [self.view addSubview:label];

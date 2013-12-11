@@ -21,13 +21,13 @@
 		5083F7641850DC6F000149DE /* awarenessTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5083F7631850DC6F000149DE /* awarenessTests.m */; };
 		50CF57B31856B08E00DEFA15 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50CF57B21856B08E00DEFA15 /* CoreText.framework */; };
 		50CF57B51856B09300DEFA15 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50CF57B41856B09300DEFA15 /* QuartzCore.framework */; };
-		50CF5F261856B19200DEFA15 /* default-style.css in Resources */ = {isa = PBXBuildFile; fileRef = 50CF5F251856B19200DEFA15 /* default-style.css */; };
-		50CF5F271856B19200DEFA15 /* default-style.css in Resources */ = {isa = PBXBuildFile; fileRef = 50CF5F251856B19200DEFA15 /* default-style.css */; };
+		50CF5F261856B19200DEFA15 /* default.css in Resources */ = {isa = PBXBuildFile; fileRef = 50CF5F251856B19200DEFA15 /* default.css */; };
+		50CF5F271856B19200DEFA15 /* default.css in Resources */ = {isa = PBXBuildFile; fileRef = 50CF5F251856B19200DEFA15 /* default.css */; };
 		50CF5F831857D93C00DEFA15 /* icon_awareness_120.png in Resources */ = {isa = PBXBuildFile; fileRef = 50CF5F821857D93C00DEFA15 /* icon_awareness_120.png */; };
+		50ECE8A6185923510043CF7D /* Pixate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50ECE8A5185923510043CF7D /* Pixate.framework */; };
+		50ECE8A7185923510043CF7D /* Pixate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50ECE8A5185923510043CF7D /* Pixate.framework */; };
 		50FFB5381853CFF600655B6F /* AwareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FFB5371853CFF600655B6F /* AwareViewController.m */; };
 		50FFB5391853CFF600655B6F /* AwareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FFB5371853CFF600655B6F /* AwareViewController.m */; };
-		50FFB53F1853DE5400655B6F /* UIColor+Aware.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FFB53E1853DE5400655B6F /* UIColor+Aware.m */; };
-		50FFB5401853DE5400655B6F /* UIColor+Aware.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FFB53E1853DE5400655B6F /* UIColor+Aware.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,12 +59,11 @@
 		5083F7631850DC6F000149DE /* awarenessTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = awarenessTests.m; sourceTree = "<group>"; };
 		50CF57B21856B08E00DEFA15 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		50CF57B41856B09300DEFA15 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		50CF5F251856B19200DEFA15 /* default-style.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = "default-style.css"; sourceTree = "<group>"; };
+		50CF5F251856B19200DEFA15 /* default.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = default.css; sourceTree = "<group>"; };
 		50CF5F821857D93C00DEFA15 /* icon_awareness_120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_awareness_120.png; sourceTree = "<group>"; };
+		50ECE8A5185923510043CF7D /* Pixate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Pixate.framework; sourceTree = "<group>"; };
 		50FFB5361853CFF600655B6F /* AwareViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AwareViewController.h; sourceTree = "<group>"; };
 		50FFB5371853CFF600655B6F /* AwareViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AwareViewController.m; sourceTree = "<group>"; };
-		50FFB53D1853DE5400655B6F /* UIColor+Aware.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Aware.h"; sourceTree = "<group>"; };
-		50FFB53E1853DE5400655B6F /* UIColor+Aware.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Aware.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +74,7 @@
 				50CF57B51856B09300DEFA15 /* QuartzCore.framework in Frameworks */,
 				50CF57B31856B08E00DEFA15 /* CoreText.framework in Frameworks */,
 				5083F7411850DC6F000149DE /* CoreGraphics.framework in Frameworks */,
+				50ECE8A6185923510043CF7D /* Pixate.framework in Frameworks */,
 				5083F7431850DC6F000149DE /* UIKit.framework in Frameworks */,
 				5083F73F1850DC6F000149DE /* Foundation.framework in Frameworks */,
 			);
@@ -87,6 +87,7 @@
 				5083F7581850DC6F000149DE /* XCTest.framework in Frameworks */,
 				5083F75A1850DC6F000149DE /* UIKit.framework in Frameworks */,
 				5083F7591850DC6F000149DE /* Foundation.framework in Frameworks */,
+				50ECE8A7185923510043CF7D /* Pixate.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,8 +97,8 @@
 		5083F7321850DC6F000149DE = {
 			isa = PBXGroup;
 			children = (
+				50ECE8A1185919990043CF7D /* CSS */,
 				50CF5F811857D93C00DEFA15 /* Graphics */,
-				50CF5F251856B19200DEFA15 /* default-style.css */,
 				5083F7441850DC6F000149DE /* awareness */,
 				5083F75D1850DC6F000149DE /* awarenessTests */,
 				5083F73D1850DC6F000149DE /* Frameworks */,
@@ -117,6 +118,7 @@
 		5083F73D1850DC6F000149DE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				50ECE8A5185923510043CF7D /* Pixate.framework */,
 				50CF57B41856B09300DEFA15 /* QuartzCore.framework */,
 				50CF57B21856B08E00DEFA15 /* CoreText.framework */,
 				5083F73E1850DC6F000149DE /* Foundation.framework */,
@@ -175,6 +177,14 @@
 			path = Graphics;
 			sourceTree = "<group>";
 		};
+		50ECE8A1185919990043CF7D /* CSS */ = {
+			isa = PBXGroup;
+			children = (
+				50CF5F251856B19200DEFA15 /* default.css */,
+			);
+			name = CSS;
+			sourceTree = "<group>";
+		};
 		50FFB5351853CFDF00655B6F /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -205,8 +215,6 @@
 		50FFB53C1853DE2E00655B6F /* Category+Utils */ = {
 			isa = PBXGroup;
 			children = (
-				50FFB53D1853DE5400655B6F /* UIColor+Aware.h */,
-				50FFB53E1853DE5400655B6F /* UIColor+Aware.m */,
 			);
 			name = "Category+Utils";
 			sourceTree = "<group>";
@@ -290,7 +298,7 @@
 				50CF5F831857D93C00DEFA15 /* icon_awareness_120.png in Resources */,
 				5083F7491850DC6F000149DE /* InfoPlist.strings in Resources */,
 				5083F7511850DC6F000149DE /* Images.xcassets in Resources */,
-				50CF5F261856B19200DEFA15 /* default-style.css in Resources */,
+				50CF5F261856B19200DEFA15 /* default.css in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,7 +306,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				50CF5F271856B19200DEFA15 /* default-style.css in Resources */,
+				50CF5F271856B19200DEFA15 /* default.css in Resources */,
 				5083F7621850DC6F000149DE /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -312,7 +320,6 @@
 			files = (
 				5083F74B1850DC6F000149DE /* main.m in Sources */,
 				50FFB5381853CFF600655B6F /* AwareViewController.m in Sources */,
-				50FFB53F1853DE5400655B6F /* UIColor+Aware.m in Sources */,
 				5083F74F1850DC6F000149DE /* AwareAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -322,7 +329,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				5083F7641850DC6F000149DE /* awarenessTests.m in Sources */,
-				50FFB5401853DE5400655B6F /* UIColor+Aware.m in Sources */,
 				50FFB5391853CFF600655B6F /* AwareViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -439,10 +445,12 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/dsherpa/Personal/Pixate/Framework,
+					/Users/dsherpa/Personal/awareness,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "awareness/awareness-Prefix.pch";
 				INFOPLIST_FILE = "awareness/awareness-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -456,10 +464,12 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/dsherpa/Personal/Pixate/Framework,
+					/Users/dsherpa/Personal/awareness,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "awareness/awareness-Prefix.pch";
 				INFOPLIST_FILE = "awareness/awareness-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -475,6 +485,7 @@
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 					/Users/dsherpa/Personal/Pixate/Framework,
+					/Users/dsherpa/Personal/awareness,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "awareness/awareness-Prefix.pch";
@@ -499,6 +510,7 @@
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 					/Users/dsherpa/Personal/Pixate/Framework,
+					/Users/dsherpa/Personal/awareness,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "awareness/awareness-Prefix.pch";
