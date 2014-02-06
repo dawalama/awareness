@@ -1,4 +1,7 @@
 pixate-config {
+    parse-error-destination: console;
+    cache-styles: auto;
+    image-cache-count: 100;
 }
 
 view {

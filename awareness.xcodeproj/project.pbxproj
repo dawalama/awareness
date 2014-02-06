@@ -24,10 +24,9 @@
 		50CF5F261856B19200DEFA15 /* default.css in Resources */ = {isa = PBXBuildFile; fileRef = 50CF5F251856B19200DEFA15 /* default.css */; };
 		50CF5F271856B19200DEFA15 /* default.css in Resources */ = {isa = PBXBuildFile; fileRef = 50CF5F251856B19200DEFA15 /* default.css */; };
 		50CF5F831857D93C00DEFA15 /* icon_awareness_120.png in Resources */ = {isa = PBXBuildFile; fileRef = 50CF5F821857D93C00DEFA15 /* icon_awareness_120.png */; };
-		50ECE8A6185923510043CF7D /* Pixate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50ECE8A5185923510043CF7D /* Pixate.framework */; };
-		50ECE8A7185923510043CF7D /* Pixate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50ECE8A5185923510043CF7D /* Pixate.framework */; };
 		50FFB5381853CFF600655B6F /* AwareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FFB5371853CFF600655B6F /* AwareViewController.m */; };
 		50FFB5391853CFF600655B6F /* AwareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FFB5371853CFF600655B6F /* AwareViewController.m */; };
+		E8CF8B1C18A4207400DCD3B5 /* Pixate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8CF8B1B18A4207400DCD3B5 /* Pixate.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,9 +60,9 @@
 		50CF57B41856B09300DEFA15 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		50CF5F251856B19200DEFA15 /* default.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = default.css; sourceTree = "<group>"; };
 		50CF5F821857D93C00DEFA15 /* icon_awareness_120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_awareness_120.png; sourceTree = "<group>"; };
-		50ECE8A5185923510043CF7D /* Pixate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Pixate.framework; sourceTree = "<group>"; };
 		50FFB5361853CFF600655B6F /* AwareViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AwareViewController.h; sourceTree = "<group>"; };
 		50FFB5371853CFF600655B6F /* AwareViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AwareViewController.m; sourceTree = "<group>"; };
+		E8CF8B1B18A4207400DCD3B5 /* Pixate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Pixate.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,7 +73,7 @@
 				50CF57B51856B09300DEFA15 /* QuartzCore.framework in Frameworks */,
 				50CF57B31856B08E00DEFA15 /* CoreText.framework in Frameworks */,
 				5083F7411850DC6F000149DE /* CoreGraphics.framework in Frameworks */,
-				50ECE8A6185923510043CF7D /* Pixate.framework in Frameworks */,
+				E8CF8B1C18A4207400DCD3B5 /* Pixate.framework in Frameworks */,
 				5083F7431850DC6F000149DE /* UIKit.framework in Frameworks */,
 				5083F73F1850DC6F000149DE /* Foundation.framework in Frameworks */,
 			);
@@ -87,7 +86,6 @@
 				5083F7581850DC6F000149DE /* XCTest.framework in Frameworks */,
 				5083F75A1850DC6F000149DE /* UIKit.framework in Frameworks */,
 				5083F7591850DC6F000149DE /* Foundation.framework in Frameworks */,
-				50ECE8A7185923510043CF7D /* Pixate.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,7 +116,7 @@
 		5083F73D1850DC6F000149DE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				50ECE8A5185923510043CF7D /* Pixate.framework */,
+				E8CF8B1B18A4207400DCD3B5 /* Pixate.framework */,
 				50CF57B41856B09300DEFA15 /* QuartzCore.framework */,
 				50CF57B21856B08E00DEFA15 /* CoreText.framework */,
 				5083F73E1850DC6F000149DE /* Foundation.framework */,
@@ -446,6 +444,7 @@
 					"$(inherited)",
 					/Users/dsherpa/Personal/Pixate/Framework,
 					/Users/dsherpa/Personal/awareness,
+					/Users/dawalama/Projects/IosProjects/awareness,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "awareness/awareness-Prefix.pch";
@@ -465,6 +464,7 @@
 					"$(inherited)",
 					/Users/dsherpa/Personal/Pixate/Framework,
 					/Users/dsherpa/Personal/awareness,
+					/Users/dawalama/Projects/IosProjects/awareness,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "awareness/awareness-Prefix.pch";
